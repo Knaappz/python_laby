@@ -16,8 +16,9 @@ piwo2 = Piwo("Żubr", "jasny lager", 5, 6.0, 10, "Puszcza Białowieska")
 piwo3 = Piwo("Lech", "jasne pełne", 6, 5.2, 2, "Wielkopolska")
 piwo4 = Piwo("Somersby", "oranżada", 7, 4.5, 1, "Dania")
 piwo5 = Piwo("Zetecky", "dolna fermentacja", 5, 5.0, 9, "Czechy")
+piwo6 = Piwo("Romper", "kto to wie", 3, 7.0, 0, "Czechy")
 
-lista_piw = [piwo1, piwo2, piwo3, piwo4, piwo5]
+lista_piw = [piwo1, piwo2, piwo3, piwo4, piwo5, piwo6]
 posortowane_piw = Piwo.posortuj_po_ocenie(lista_piw)
 for piwo in posortowane_piw:
     print(piwo.nazwa, " - ocena: ", piwo.ocena,"/10")
