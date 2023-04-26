@@ -1,6 +1,8 @@
-#1
+# 1
 
-import  random
+import random
+
+
 class Restaurant:
     def __init__(self, nazwa, rodzaj, ocena, lokalizacja):
         self.nazwa = nazwa
@@ -48,16 +50,19 @@ class CoffeShop(Restaurant):
         print(f"Najtańsza kawa w {self.nazwa} to: {naj}, cena: {cena} PLN")
 
     def nowa_kawa(self, nazwa, cena):
-            self.kawy[nazwa] = cena
-            print(f"Nowa kawa '{nazwa}' została dodana do menu.")
+        self.kawy[nazwa] = cena
+        print(f"Nowa kawa '{nazwa}' została dodana do menu.")
 
 
-# budka = Restaurant('Lody na kółkach', 'lodziarnia', '5/5 gwiazdek', 'Brzeg Dolny')
-# budka.o_nas()
-#
+budka1 = Restaurant('Lody na kółkach', 'lodziarnia', '5/5 gwiazdek', 'Brzeg Dolny')
+budka2 = Restaurant('Lodex', 'lodziarnia', '4/5', 'Warszawa')
+
+budka1.o_nas()
+budka2.o_nas()
+
 # budka = Stoisko('Lody na kółkach', 'lodziarnia', '5/5 gwiazdek', 'Brzeg Dolny')
 # budka.smaki_lodow()
-#
+# #
 # coffie = CoffeShop('Lodówka','kawiarnia','4/5 giazdek','Wołów')
 # coffie.menu()
 # print(' ')
