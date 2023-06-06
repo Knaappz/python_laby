@@ -1,3 +1,4 @@
+#zad1
 def sprawdz_kod(kod):
     if not kod[:2].isdigit():
         raise ValueError("Ciąg liczb jest niepoprawny")
@@ -21,3 +22,5 @@ with open("kody_pocztowe.txt", "a") as file:
             print("Kod pocztowy został zapisany do pliku 'kody_pocztowe.txt'")
         except ValueError as e:
             print("Błąd:", str(e))
+
+#zad2
